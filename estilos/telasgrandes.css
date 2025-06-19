@@ -1,19 +1,18 @@
 
 @charset "UTF-8";
-@media (min-width: 1100px){
-
-@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ruda:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital@1&display=swap');
-@font-face {
-    font-family: 'versailles';
-    src: url('/fontes/VersaillesLTStd-Light.woff') format('truetype');
-}
-
-
-/* Configurações Gerais*/
-:root{
-    --cor00: white;
+@media (min-width: 700px){
+    @import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ruda:wght@400..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital@1&display=swap');
+    @font-face {
+        font-family: 'versailles';
+        src: url('/fontes/VersaillesLTStd-Light.woff') format('truetype');
+    }
+    
+    
+    /* Configurações Gerais*/
+    :root{
+        --cor00: white;
     --cor01: #dbc97f;
     --cor02: #d3c17a;
     --cor03: #b1a267;
@@ -35,12 +34,39 @@
 }
 
 body{
-    width: 100%;
     background-color: var(--cor11);
+}
+.reta > h2{
+    font-family: var(--versailles);
+    font-size: 30px;
+    color: var(--cor06);
+    margin-left: 60px;
+    margin-bottom: 20px;
 }
 
 
 /*  Cabeçalho */
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: #d3c17a;
+    background-image: url(../imagens/mulherloira.png);
+    background-size: 500p;
+    background-repeat: no-repeat;
+    background-position: right 20% bottom;
+}
+#erro{
+    display: none;
+}
+#iconMenu{
+    opacity: 0;
+}
+#logo02{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 250px;
+}
 menu{
     position: absolute;
     opacity: 1;
@@ -48,14 +74,26 @@ menu{
     left: 30px;
     width: 500px;
 }
-#iconMenu{
-    opacity: 0;
+menu > ul{
+    display: flex;
 }
-
 #iconSair{
     opacity: 0;
 }
-
+li > a{
+    color: var(--cor05);
+    font-family: var(--ruda);
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+li > a:hover{
+    background-color: var(--cor06);
+    color: var(--cor11);
+    transition: 0.5s;
+    
+}
 #box {
     text-decoration: justify;
     font-family: var(--versailles);
@@ -65,33 +103,14 @@ menu{
     position:absolute;
     translate: 15% 70%;
     width: 60%;
-
+    
 }
-#erro{
-    display: none;
-}
-#sub{
+#box > p{
     font-family: var(--ruda);
     font-size: 15px;
     color: var(--cor05);
     margin-top: 10px;
 }
-#logo02{
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    width: 250px;
-}
-
-#button > img{
-    display: flex;
-    align-items: center;
-    left: 20px;
-    justify-content: center;  
-    
-}
-
-
 #agendamento{
     text-decoration: none;
     margin: 20px auto;
@@ -106,6 +125,18 @@ menu{
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.371);
 }
+#button > img{
+    display: flex;
+    align-items: center;
+    left: 20px;
+    justify-content: center;  
+    
+}
+#button > img {
+    width: 10px;
+    margin: 10px;
+    height: auto;
+}
 #button > p{
     font-weight: bold;
     font-size: 14px;
@@ -116,12 +147,20 @@ menu{
 #button:hover > p{
     color: var(--cor11);
 }
-#button > img {
-    width: 10px;
-    margin: 10px;
-    height: auto;
+#sobre  > h1, h2{
+    font-family: var(--versailles);
+    font-weight: normal;
+    color: #4b452b;
+    margin-left: 60px;
+    letter-spacing: 5px;
+    font-size: 30px;
 }
-
+.reta > img{
+    margin-top: 40px;
+    width: 246px;
+    height: 16px;
+    margin-left: 47px;
+}
 #boxsalao{
     color: #4b452b;
     display: flex;
@@ -141,22 +180,16 @@ menu{
     width: 40%;
     margin-top: 50px;
 }
-
-
-
 #maps{
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        width: 40%;
-        height: 400px;
-        background-color: var(--cor04);
-        border-radius: 10px 0px 0px 10px;
-        margin-right: -87px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 40%;
+    height: 400px;
+    background-color: var(--cor04);
+    border-radius: 10px 0px 0px 10px;
+    margin-right: -87px;
 }
-
-        
-
 #maps > iframe{
     width: 99%;
     border-radius: 10px 0px 0px 10px;
@@ -164,78 +197,8 @@ menu{
     left: 100%;
 }
 
-
-menu > ul{
-    display: flex;
-}
-
-.reta > img{
-    margin-top: 40px;
-    width: 246px;
-    height: 16px;
-    margin-left: 47px;
-}
-
-#certificados > .reta > img{
-    width: 200px;
-    margin-left: 50px;
-}
-
-.ceta{
-    border-radius: 10px;
-    width: 60px;
-    text-align: center;
-    opacity: 0;
-    transition: 1s;
-}
-#quadroServicos:hover .ceta{
-    opacity: 1;
-}
-
-
-#certificados{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-top: 100px;
-}
-
-
-#sobre  > h1, h2{
-    font-family: var(--versailles);
-    font-weight: normal;
-    color: #4b452b;
-    margin-left: 60px;
-    letter-spacing: 5px;
-    font-size: 30px;
-}
-
-li > a{
-    color: var(--cor05);
-    font-family: var(--ruda);
-    text-decoration: none;
-    font-size: 13px;
-    padding: 10px 20px;
-    border-radius: 20px;
-}
-li > a:hover{
-    background-color: var(--cor06);
-    color: var(--cor11);
-    transition: 0.5s;
-
-}
-
-#tituloservidor{
-    font-family: var(--versailles);
-    font-size: 20px;
-    color: var(--cor06);
-    text-align: center;
-    margin-top: 20px;
-    margin-right: 980px;
-    background-color: black;
-}
+/*                        Parte dos serviços
+*/
 
 #servicos{
     display: flex;
@@ -258,135 +221,22 @@ li > a:hover{
     margin-left: 60px;
     margin-bottom: 20px;
 }
-
-
-header{
-    width: 100%;
-    height: 100vh;
-    
-    background-color: #d3c17a;
-    background-image: url(../imagens/mulherloira.png);
-    background-size: 500px;
-    background-repeat: no-repeat;
-    background-position: right 20% bottom;
-}
-
 #quadroServicos{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
+    overflow: auto;
+    gap: 10px;           
+    padding: 10px;
 }
-
-.reta > h2{
-    font-family: var(--versailles);
-    font-size: 30px;
-    color: var(--cor06);
-    margin-left: 60px;
-    margin-bottom: 20px;
-}
-
-#boxcertificados > picture > img{
-    width: 400px;
-    margin: 95px 120px;
-}
-
-#boxcertificados{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-}
-#boxcertificados > div{
+.ceta{
+    border-radius: 10px;
+    width: 60px;
+    text-align: center;
     opacity: 0;
-    transition: 0.5s;
+    transition: 1s;
 }
-#boxcertificados:hover div{
+#quadroServicos:hover .ceta{
     opacity: 1;
 }
-#boxcertificados > div > img{
-    width: 20px;
-    height: auto;
-    cursor: pointer;
-    transition: 0.5s;
-    margin: 10px;
-}
-#boxcertificados > div:hover > img{
-    width: 30px;
-    margin: 5px;
-}
-
-.fotosgaleria > img{
-    width: 200px;
-    height: 200px;
-    margin: 20px auto;
-    border-radius: 20px;
-    border: 5px solid var(--cor04);
-
-}
-
-#resultados > .reta > img{
-    width: 150px;
-}
-#subi{
-    height: 500px;
-}
-
-#predes{
-    text-align: center;
-    font-size: 20px;
-    font-family: var(--quicksand);
-    margin-top: 50px;
-}
-
-#redes > img{
-    width: 50px;
-    height: 50px;
-    margin: 20px;
-    transition: 0.5s;
-}
-#redes > img:hover{
-    width: 60px;
-    height: 60px;
-    margin: 10px;
-}
-
-#redes{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 200px auto 100px auto;
-    width: 80%;
-}
-
-#subi > p{
-    font-family: var(--quicksand);
-    bottom: 20px;
-    font-size: 30;
-}
-
-
-
-.fotosgaleria{
-    display: flex;
-    width: 70%;
-    flex-wrap: wrap;
-    margin: 80px auto;
-    
-}
-
-#certificados > article{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .servicosImagens{
     position: relative;
     width: 200px;
@@ -398,6 +248,12 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
+}
+.fundo{
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.76);
 }
 .paragrafosimagens{
     width: 100%;
@@ -416,50 +272,119 @@ header{
     top: 50%;
     opacity: 1;
 }
-.fundo{
+#certificados{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 400px;
+    height: 100%;
+    margin-top: 100px;
+}
+#certificados > .reta > img{
+    width: 200px;
+    margin-left: 50px;
+}
+#certificados > article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#boxcertificados{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+#boxcertificados > div{
+    opacity: 0;
+    transition: 0.5s;
+}
+#boxcertificados:hover div{
+    opacity: 1;
+}
+#boxcertificados > picture > img{
+    width: 400px;
+    margin: 95px 120px;
+}
+#boxcertificados > div > img{
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 10px;
+}
+#boxcertificados > div:hover > img{
+    width: 30px;
+    margin: 5px;
+}
+
+/*                          Parte dos resultados
+*/
+
+
+#resultados > .reta > img{
+    width: 150px;
+}
+.fotosgaleria{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    margin: 80px auto;
+}
+.fotosgaleria > img{
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.76);
+    border: 5px solid var(--cor04);
 }
 
-.emailincon > img{
-    display: flex;
-    justify-content: center;
-    
-    align-items: center;
-    width: 20px;
-    height: auto;
-}
+/*                               Parte do contato
+*/
 
-.emailincon > p{
+#contato{
+    height: 500px;
+}
+#contato > p{
     font-family: var(--quicksand);
-    text-align: left;
-    font-size: 12px;
-    color: var(--cor05);
-    margin-left: 10px;
+    bottom: 20px;
+    font-size: 30;
 }
-
-.telefoneicon > img{
+#redes{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    width: 20px;
-    height: auto;
-    
+    margin: 200px auto 100px auto;
+    width: 80%;
 }
-
+#redes > img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    transition: 0.5s;
+}
+#redes > img:hover{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+#predes{
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--quicksand);
+    margin-top: 50px;
+}
 #boxfooter{
     display: flex;
-    margin-top: 50px;
+    margin-top: 100px;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: auto; 
-}
-
-#boxfooter{
-    margin-top: 100px;
 }
 #boxfooter > img{
     width: 300px;
@@ -481,13 +406,18 @@ header{
     margin-left: 20px;
 
 }
-
+#final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 10px 30px;
+}
 #divulgfinal{
     display: flex;
     justify-content: space-between;
     padding: 0px 30px;
     align-items: center;
-
+    
 }
 #divulgfinal > section{
     display: flex;
@@ -498,38 +428,19 @@ header{
     font-size: 16px;
     color: var(--cor05);
 }
+.iconfinal > p{
+    font-family: var(--quicksand);
+    text-align: left;
+    font-size: 12px;
+    color: var(--cor05);
+    margin-left: 10px;
+}
 
-#final{
+.iconfinal > img{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0px 30px 10px 30px;
+    width: 20px;
+    height: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+} 

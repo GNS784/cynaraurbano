@@ -256,7 +256,7 @@ h2{
     font-size: 25px;
     font-family: var(--ruda);
     color: var(--cor11);
-    font-weight: bold;
+    font-weight: normal;
 }
 #certificados > .reta > img{
     width: 250px;
@@ -281,7 +281,6 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--cor04);
     width: 50px;
     height: 30px;
     border-radius: 10px;
@@ -304,8 +303,9 @@ h2{
 }
 .fotosgaleria > img{
     width: 200px;
-    height: 200px;
+    height: 300px;
     border-radius: 20px;
+    margin: 0px 10px;
 
 }
 #subi{
@@ -315,7 +315,7 @@ h2{
     display: flex;
     justify-content: center;
 }
-.rede > div > img{
+#redes > img{
     width: 30px;
     height: 30px;
     margin: 30px 30px 30px 30px;
