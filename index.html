@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="favicon/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/smartphones.css">
-    <link rel="stylesheet" href="estilos/tablets.css">
+    <link rel="stylesheet" href="estilos/tablete.css">
     <title>Cynara Urbano</title>
 </head>
 <body>
@@ -33,13 +33,13 @@
         <section id="box">
             <h1>O Cuidado <br> que você merece <br> todos os dias</h1>
             <p>Especialista em cabelos, maquiagem, unhas e muitos mais.</p><br>
-        <a href="" id="agendamento">
-            <div id="button">
-            <img src="imagens/icons/bola.png" alt="">
-            <p>Agende seu horário</p>
-            <img src="imagens/icons/bola.png" alt="">
-            </div>
-        </a>
+            <a href="" id="agendamento">
+                <div id="button">
+                    <img src="imagens/icons/bola.png" alt="">
+                    <p>Agende seu horário</p>
+                    <img src="imagens/icons/bola.png" alt="">
+                </div>
+            </a>
         </section>
     </header>
 
@@ -106,11 +106,17 @@
             <div class="reta"><img src="imagens/icons/reta.png" alt=""></div>
             <h2>Profissionalismo e Qualidade</h2>
             <article id="boxcertificados">
+                <button onclick="setaEsquerda()" id="setaesquerda">
+                    <img src="imagens/icons/cetaesquerda.png" alt="">
+                </button>
                 <picture id="imgcertificados">
                     <img class="certificadoslaterais" src="imagens/certificado/certificado01.jpg" alt="" id="cert1" onclick="clicar(this)">
                     <img id="cert2" src="imagens/certificado/certificado02.jpg" alt="" onclick="clicar(this)">
                     <img class="certificadoslaterais" src="imagens/certificado/certificado03.jpg" alt="" id="cert3" onclick="clicar(this)">
                 </picture>
+                <button onclick="setaDireita()" id="setadireita">
+                    <img src="imagens/icons/cetadireita.png" alt="">
+                </button>
             </article>
         </section>
         <section id="resultados">
@@ -172,7 +178,7 @@
             </section>
         </div>
         <div id="final">
-            <p>Site criado por:   Empresa sei la</p>
+            <p>Site criado por: Lina agência de Desing</p>
             <p>© 2025 Salão Cynara Urbano — Todos os direitos reservados.</p>
         </div>
     <script src="scripts/script.js"></script>

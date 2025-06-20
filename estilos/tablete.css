@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@media (min-width: 600px) and (max-width: 834px) { 
+ 
+
+body{
+    min-width: 600px;
+    margin: auto;
+    display: block;
+    background-color: var(--cor11);
+    width: 168%;
+    height: 50%;
+
+}
+
+header{
+    background-size: 700px;
+    background-position: bottom right -50px;
+    height: 70vh;
+}
+
+menu{
+    
+}
+
+
+#box{
+    position: relative;
+    width: 480px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 20%;
+    margin-left: 80px;
+}
+   
+#box > #agendamento{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center right;
+    text-decoration: none;
+    margin: 20px auto;
+}
+
+
+sobre > h1 {
+    font-family: var(--versailles);
+    font-weight: normal;
+    color: #4b452b;
+    margin-left: 40px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: left;
+}  
+
+#salao{
+    width:50%;
+    margin-top: 5%;
+}
+#maps {
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    margin: auto;
+}
+#maps > iframe {
+    width: 97%;
+    border-radius: 10px;
+    bottom: 50px;
+    height: 95%;
+    margin: auto;
+}
+
+}

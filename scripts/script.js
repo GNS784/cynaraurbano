@@ -1,14 +1,3 @@
-/*
-let menu = document.getElementById("menu");
-function clicarMenu() {
-    menu.style.opacity = "1";
-    menu.style.left = "0px";
-}
-function clicarSair() {
-    menu.style.opacity = "0";
-    menu.style.left = "-200px";
-}
-*/
 
 let cert1 = document.getElementById("cert1")
 let cert2 = document.getElementById("cert2")
@@ -43,35 +32,37 @@ function clicar(imagemclicada){
   }
   }
 }
+
+
+/*                                    Parte dos certificados  
+*/
+certificadosCert = ['certificado01.jpg', 'certificado02.jpg', 'certificado03.jpg']
+valorAtualCert = 0
 function setaDireita(){
-  if(innerWidth > 600){
-    return
-  }else{
-  if(valorAtual >= 0 && valorAtual < 2){
-    valorAtual += 1
-    cert2.src = `imagens/certificado/${certificados[valorAtual]}`
-  }else{
-    valorAtual = 2
-    cert.src = `imagens/certificado/${certificados[valorAtual]}`
-  }
-}
-}
-function setaEsquerda(){
-  if(innerWidth > 600){
-    return
-  }else{
-    if(valorAtual >= 1 && valorAtual <= 2){
-      valorAtual -= 1
-      cert.src = `imagens/certificado/${certificados[valorAtual]}`
+  if(innerWidth < 600){
+    if(valorAtualCert >= 0 && valorAtualCert < 2){
+      valorAtualCert += 1
+      cert2.src = `imagens/certificado/${certificadosCert[valorAtualCert]}`
     }else{
-      valorAtual = 0
-      cert.src = `imagens/certificado/${certificados[valorAtual]}`
+      valorAtualCert = 2
+      cert2.src = `imagens/certificado/${certificadosCert[valorAtualCert]}`
     }
-  }
+  }else{
+    return
 }
-
-
-
+}function setaEsquerda(){
+  if(innerWidth < 600){
+    if(valorAtualCert >= 1 && valorAtualCert <= 2){
+      valorAtualCert -= 1
+      cert2.src = `imagens/certificado/${certificadosCert[valorAtualCert]}`
+    }else{
+      valorAtualCert = 0
+      cert2.src = `imagens/certificado/${certificadosCert[valorAtualCert]}`
+  }
+  }else{
+    return
+}
+}
 
 
 

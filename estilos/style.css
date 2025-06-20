@@ -318,7 +318,6 @@ li > a:hover{
 #boxcertificados{
     position: relative;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -351,6 +350,9 @@ li > a:hover{
 #imgcertificados > img:hover{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.295);
 }
+#boxcertificados > button{
+    display: none;
+}
 
 /*                          Parte dos resultados
 */
@@ -360,14 +362,15 @@ li > a:hover{
     width: 150px;
 }
 
-.boxcarrosselresultados{
-  position: relative;
-  width: 80%; 
-  margin: 100px auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
+.boxcarrosselresultados {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
 }
 .carrosselresultados {
     display: flex;
@@ -454,6 +457,9 @@ li > a:hover{
     align-items: center;
     padding: 0px 30px 10px 30px;
 }
+#final > p{
+    font-family: var(ruda);
+}
 #divulgfinal{
     display: flex;
     justify-content: space-between;
@@ -467,6 +473,7 @@ li > a:hover{
     align-items: center;
 }
 #divulgfinal > section > p{
+    font-family: var(--ruda);
     font-size: 16px;
     color: var(--cor05);
 }
