@@ -1,4 +1,132 @@
 @charset "UTF-8";
-@media (max-width: 600px){
-    
+@media (max-width: 834px){
+body{
+    min-width: 100vw;
+}
+header {
+    background-size: 500px;
+    background-position: center bottom;
+}
+menu{
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    text-align: center;
+    background-color: var(--cor06);
+    border-radius: 0px 10px 10px 0px;
+}
+menu > ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 0px;
+}
+#iconSair {
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+li > a{
+    color: white;
+    padding: 0px;
+}
+#logo02 {
+    display: none;
+}
+#box {
+    text-align: center;
+    font-size: 25px;
+    translate: 0% 0%;
+    width: 100%;
+}
+#button{
+    margin: auto;
+}
+#box > p {
+    font-size: 12px;
+}
+#sobre > .reta > img{
+    width: 200px;
+    height: 10px;
+    margin: 10px auto 5px auto;
+}
+#sobre > h1 {
+    margin: 0px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-align: center;
+}
+#boxsalao{
+    flex-direction: column;
+}
+#salao{
+    width: 80%;
+    margin-bottom: 40px;
+}
+#salao > p {
+    font-size: 14px;
+    letter-spacing: normal;
+}
+#maps {
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    margin: auto;
+}
+#maps > iframe {
+    width: 97%;
+    border-radius: 10px;
+    height: 95%;
+    margin: auto;
+}
+#servicos{
+    margin-top: 50px;
+}
+#servicos > h2 {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+#servicos > .reta > img {
+    width: 120px;
+    height: 10px;
+    margin-bottom: 5px;
+}
+.carrossel {
+    gap: 10px;
+    margin-left: 0px;
+    height: 210px;
+}
+.boxitens {
+    height: 200px;
+}
+.boxitens{
+    filter: blur(0px);
+}
+.boxcarrossel{
+    margin: 50px auto;
+    width: 90%;
+}
+.boxitens > p {
+    top: 95px;
+    font-size: 16px;
+}
+.item {
+    width: 100px;
+    height: 200px;
+}
+.seta{
+    display: none;
+}
+#certificados{
+    margin-top: 0px;
+}
+h2 {
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+#certificados > .reta > img {
+    width: 250px;
+    height: 10px;
+}
 }

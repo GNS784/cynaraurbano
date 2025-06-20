@@ -16,6 +16,9 @@ let cert3 = document.getElementById("cert3")
 let certificados = [cert1.src, cert2.src, cert3.src]
 let valorAtual = 0
 function clicar(imagemclicada){
+  if(innerWidth < 600){
+    return
+  }else{
     cert1.style.width = "250px"
     cert1.style.height = "200px"
     cert1.style.filter = "blur(5px)"
@@ -38,44 +41,33 @@ function clicar(imagemclicada){
     cert3.style.height = "280px"
     cert3.style.filter = "blur(0px)"
   }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* function setaDireita(){
+function setaDireita(){
+  if(innerWidth > 600){
+    return
+  }else{
   if(valorAtual >= 0 && valorAtual < 2){
     valorAtual += 1
-    cert.src = `imagens/certificado/${certificados[valorAtual]}`
+    cert2.src = `imagens/certificado/${certificados[valorAtual]}`
   }else{
     valorAtual = 2
     cert.src = `imagens/certificado/${certificados[valorAtual]}`
   }
-} */
-/* function setaEsquerda(){
-    if(valorAtual >= 1 && valorAtual <= 2){
-    valorAtual -= 1
-    cert.src = `imagens/certificado/${certificados[valorAtual]}`
+}
+}
+function setaEsquerda(){
+  if(innerWidth > 600){
+    return
   }else{
-    valorAtual = 0
-    cert.src = `imagens/certificado/${certificados[valorAtual]}`
-  }/*
+    if(valorAtual >= 1 && valorAtual <= 2){
+      valorAtual -= 1
+      cert.src = `imagens/certificado/${certificados[valorAtual]}`
+    }else{
+      valorAtual = 0
+      cert.src = `imagens/certificado/${certificados[valorAtual]}`
+    }
+  }
 }
 
 
