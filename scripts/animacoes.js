@@ -47,7 +47,7 @@ function clicarSair(){
     menu.style.left = "-100%"
 }
 menu.addEventListener("click", function(event) {
-    if (event.target.tagName === "A") {
+    if (event.target.tagName === "A" && innerWidth < 600) {
         menu.style.left = "-100%";
     }
 });
