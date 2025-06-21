@@ -366,7 +366,7 @@ li > a:hover{
     position: relative;
     width: 79%;
     padding: 10px;
-    margin: 100px auto;
+    margin: 2px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -434,7 +434,7 @@ li > a:hover{
 #boxfooter > img{
     width: 300px;
     height: auto;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 #li01{

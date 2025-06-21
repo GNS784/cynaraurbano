@@ -1,92 +1,104 @@
 @charset "UTF-8";
 @media (min-width: 600px) and (max-width: 834px) { 
- 
 
 body{
-    min-width: 600px;
-    margin: auto;
-    display: block;
-    background-color: var(--cor11);
-    width: 168%;
-    height: 50%;
-
+    min-width: 100vw;
 }
-
-header{
-    background-size: 700px;
-    background-position: bottom right -50px;
-    height: 70vh;
+header {
+    height: 550px;
+    background-position: right -70px bottom 0px;
+    background-size: 540px;
+    margin-bottom: 50px;
 }
-
-
-
-#box{
-    position: relative;
-    width: 480px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
+menu{
+    left: 0px;
+}
+#box {
+    font-size: 140%;
+    translate: 10% 100%;
+}
+#box > p {
+    font-size: 12px;
+}
+li > a {
+    font-size: 20px;
+    padding: 10px 15px;
+}
+#boxsalao{
     flex-direction: column;
+}
+#salao {
+    width: 78%;
+    margin: 50px 0px;
+}
+#salao > p {
+    font-size: 18px;
+}
+#maps {
+    width: 90%;
     border-radius: 10px;
-    margin-top: 20%;
-    margin-left: 80px;
+    margin-right: 0px;
+    border: 5px solid var(--cor04);
+}
+#maps > iframe{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.boxcarrossel {
+    width: 90%;
 }
 .seta{
     display: none;
 }
-   
-#box > #agendamento{
+.carrossel{
+    margin: 60px;
+}
+#certificados{
+    margin-top: 0px;
+}
+.certificadoslaterais{
+    display: none;
+}
+#boxcertificados > button{
     position: absolute;
-    bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center right;
-    text-decoration: none;
-    margin: 20px auto;
+    margin: 50px;
+    display: block;
+    width: 40px;
+    height: 40px;
 }
-
-
-sobre > h1 {
-    font-family: var(--versailles);
-    font-weight: normal;
-    color: #4b452b;
-    margin-left: 40px;
-    letter-spacing: 5px;
-    font-size: 30px;
-    text-align: left;
+#setaesquerda{
+    left: 40px;
+    background-color: transparent;
+    border: none;
 }
-  
-#salao{
-    width:80%;
-    margin-top: 5%;
-    font-size:30px;
+#setadireita{
+    right: 40px;
+    background-color: transparent;
+    border: none;
 }
-#salao > p{
-    font-size: 20px;
+#imgcertificados {
+    position: static;
 }
-
-
-#maps {
-    width: 80%;
+#contato {
     height: 300px;
-    border: 5px solid var(--cor04);
-    border-radius: 10px;
-    margin: 50px auto 0px auto;
+    margin-top: 100px;
 }
-#maps > iframe {
-    width: 100%;
-    border-radius: 10px;
-    bottom: 50px;
-    height: 100%;
-    margin: auto;
+.carrosselresultados {
+    gap: 30px;
 }
-
-#boxsalao{
-    flex-direction: column;
+.boxcarrosselresultados {
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-#footerfinal{
-
+#redes {
+    margin: 100px auto 100px auto;
 }
-
+#redes > img {
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    transition: 0.5s;
+}
 }

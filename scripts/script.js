@@ -39,7 +39,7 @@ function clicar(imagemclicada){
 certificadosCert = ['certificado01.jpg', 'certificado02.jpg', 'certificado03.jpg']
 valorAtualCert = 0
 function setaDireita(){
-  if(innerWidth < 600){
+  if(innerWidth < 834){
     if(valorAtualCert >= 0 && valorAtualCert < 2){
       valorAtualCert += 1
       cert2.src = `imagens/certificado/${certificadosCert[valorAtualCert]}`
@@ -51,7 +51,7 @@ function setaDireita(){
     return
 }
 }function setaEsquerda(){
-  if(innerWidth < 600){
+  if(innerWidth < 834){
     if(valorAtualCert >= 1 && valorAtualCert <= 2){
       valorAtualCert -= 1
       cert2.src = `imagens/certificado/${certificadosCert[valorAtualCert]}`
