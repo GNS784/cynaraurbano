@@ -1,18 +1,22 @@
 let carrossel = document.getElementById('carrosselresultados');
-let larguraItem = document.querySelector('.itemresultados').offsetWidth + 18;
+let larguraItem = document.querySelector('.itemresultados').offsetWidth + 10;
 function rolarDireita() {
   carrossel.scrollLeft += larguraItem;
 }
 contador = 0
 setInterval(() => {
-    if (contador >= 9) {
-        carrossel.scrollLeft = 0;
-        contador = 0
-    } else {
-        rolarDireita();
-        contador++
+    if(innerWidth > 840){
+        if (contador >= 9) {
+            carrossel.scrollLeft = 0;
+            contador = 0
+        } else {
+            rolarDireita();
+            contador++
+        }
+    }else{
+        return
     }
-}, 3000);
+}, 2000);
 
 let carrosselServicos = document.getElementById('carrossel');
 let larguraItemServicos = document.querySelector('.item').offsetWidth + 45;

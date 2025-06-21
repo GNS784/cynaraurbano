@@ -18,9 +18,6 @@ header{
     height: 70vh;
 }
 
-menu{
-    
-}
 
 
 #box{
@@ -33,6 +30,9 @@ menu{
     border-radius: 10px;
     margin-top: 20%;
     margin-left: 80px;
+}
+.seta{
+    display: none;
 }
    
 #box > #agendamento{
@@ -55,24 +55,38 @@ sobre > h1 {
     letter-spacing: 5px;
     font-size: 30px;
     text-align: left;
-}  
-
-#salao{
-    width:50%;
-    margin-top: 5%;
 }
+  
+#salao{
+    width:80%;
+    margin-top: 5%;
+    font-size:30px;
+}
+#salao > p{
+    font-size: 20px;
+}
+
+
 #maps {
-    width: 90%;
-    height: 200px;
+    width: 80%;
+    height: 300px;
+    border: 5px solid var(--cor04);
     border-radius: 10px;
-    margin: auto;
+    margin: 50px auto 0px auto;
 }
 #maps > iframe {
-    width: 97%;
+    width: 100%;
     border-radius: 10px;
     bottom: 50px;
-    height: 95%;
+    height: 100%;
     margin: auto;
+}
+
+#boxsalao{
+    flex-direction: column;
+}
+#footerfinal{
+
 }
 
 }
