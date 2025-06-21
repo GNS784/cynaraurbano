@@ -101,4 +101,7 @@ li > a {
     padding: 0px;
     transition: 0.5s;
 }
+#final > p {
+    font-size: 10px;
+}
 }
