@@ -24,9 +24,9 @@
                     <img src="imagens/icons/sairicon.png" alt="">
                 </div>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#resultados">Galeria</a></li>
+                <li><a href="menuhtml/sobre.html">Sobre</a></li>
+                <li><a href="menuhtml/serviços.html">Serviços</a></li>
+                <li><a href="menuhtml/galeria.html">Galeria</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </menu>
@@ -68,38 +68,22 @@
                 </div>
             </a>
             <div class="boxcarrossel">
-            <button class="seta seta-esquerda" onclick="scrollEsquerda()"><img src="imagens/icons/cetaesquerda.png" alt=""></button>
+            <button class="seta seta-esquerda" onclick="setaEsquerdaServicos()"></button><img src="imagens/icons/cetaesquerda.png" alt=""></button>
             <div class="carrossel" id="carrossel">
                 <div class="boxitens">
-                    <img src="imagens/servicos/coloracao.jpg" class="item" />
+                    <img src="imagens/servicos/coloracao.jpg" class="item" id="servico01"/>
                     <p>Coloração</p>
                 </div>
                 <div class="boxitens">
-                    <img src="imagens/servicos/cortes.jpg" class="item" />
+                    <img src="imagens/servicos/cortes.jpg" class="item" id="servico02" />
                     <p>Cortes</p>
                 </div>
                 <div class="boxitens">
-                    <img src="imagens/servicos/manicureepedicure.jpeg" class="item" />
+                    <img src="imagens/servicos/manicureepedicure.jpeg" class="item" id="servico03"/>
                     <p>Manicure e Pedicure</p>
                 </div>
-                <div class="boxitens">
-                    <img src="imagens/servicos/massagem.jpeg" class="item" />
-                    <p>Massagem</p>
-                </div>
-                <div class="boxitens">
-                    <img src="imagens/servicos/massagem.jpeg" class="item" />
-                    <p>Massagem</p>
-                </div>
-                <div class="boxitens">
-                    <img src="imagens/servicos/massagem.jpeg" class="item" />
-                    <p>Massagem</p>
-                </div>
-                <div class="boxitens">
-                    <img src="imagens/servicos/massagem.jpeg" class="item" />
-                    <p>Massagem</p>
-                </div>
             </div>
-            <button class="seta seta-direita" onclick="scrollDireita()"><img src="imagens/icons/cetadireita.png" alt=""></button>
+            <button class="seta seta-direita" onclick="setaDireitaServicos()"><img src="imagens/icons/cetadireita.png" alt=""></button>
             </div>
         </section>
         <section id="certificados">

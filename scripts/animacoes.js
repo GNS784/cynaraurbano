@@ -18,6 +18,49 @@ setInterval(() => {
     }
 }, 2000);
 
+
+
+
+let primeiraImg = document.getElementById('servico01')
+let segundaImg = document.getElementById('servico02')
+let terceiraImg = document.getElementById('servico03')
+meusServicos = ['coloracao.jpg', 'cortes.jpg', 'manicureepedicure.jpeg', 'massagem.jpg']
+contador = 0
+setInterval(() => {
+    if(contador <= meusServicos.lenght && innerWidth < 800){
+        primeiraImg = segundaImg
+        segundaImg = terceiraImg
+        terceiraImg.style.url = ""
+    }else{
+        return
+    }
+    
+}, 100000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 let carrosselServicos = document.getElementById('carrossel');
 let larguraItemServicos = document.querySelector('.item').offsetWidth + 45;
 contadorServicos = 0
@@ -33,6 +76,18 @@ function scrollDireita() {
 function scrollEsquerda() {
   carrosselServicos.scrollLeft -= larguraItemServicos;
 }
+
+
+*/
+
+
+
+
+
+
+
+
+
 
 
 let menu = window.document.getElementById("menu")
