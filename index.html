@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/smartphones.css">
     <link rel="stylesheet" href="estilos/tablete.css">
+    <link rel="stylesheet" href="estilos/smartphones.css">
     <title>Cynara Urbano</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="menuhtml/sobre.html">Sobre</a></li>
                 <li><a href="menuhtml/serviços.html">Serviços</a></li>
-                <li><a href="menuhtml/galeria.html">Galeria</a></li>
+                <li><a href="paginas/galeria/galeria.html">Galeria</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </menu>
@@ -68,7 +68,7 @@
                 </div>
             </a>
             <div class="boxcarrossel">
-            <button class="seta seta-esquerda" onclick="setaEsquerdaServicos()"></button><img src="imagens/icons/cetaesquerda.png" alt=""></button>
+            <button class="seta seta-esquerda" onclick="setaEsquerdaServicos()"><img src="imagens/icons/cetaesquerda.png" alt=""></button>
             <div class="carrossel" id="carrossel">
                 <div class="boxitens">
                     <img src="imagens/servicos/coloracao.jpg" class="item" id="servico01"/>
@@ -82,61 +82,53 @@
                     <img src="imagens/servicos/manicureepedicure.jpeg" class="item" id="servico03"/>
                     <p>Manicure e Pedicure</p>
                 </div>
+                <div class="boxitens">
+                    <img src="imagens/servicos/massagem.jpeg" class="item" id="servico04"/>
+                    <p>Massagem</p>
+                </div>
+                <div class="boxitens">
+                    <img src="imagens/servicos/glossexpress.jpg" class="item" id="servico04"/>
+                    <p>Gloss Express</p>
+                </div>
             </div>
             <button class="seta seta-direita" onclick="setaDireitaServicos()"><img src="imagens/icons/cetadireita.png" alt=""></button>
             </div>
         </section>
-        <section id="certificados">
+        <section id="equipe">
             <div class="reta"><img src="imagens/icons/reta.png" alt=""></div>
-            <h2>Profissionalismo e Qualidade</h2>
-            <article id="boxcertificados">
-                <button onclick="setaEsquerda()" id="setaesquerda">
-                    <img src="imagens/icons/cetaesquerda.png" alt="">
-                </button>   
-                <picture id="imgcertificados">
-                    <img class="certificadoslaterais" src="imagens/certificado/certificado01.jpg" alt="" id="cert1" onclick="clicar(this)">
-                    <img id="cert2" src="imagens/certificado/certificado02.jpg" alt="" onclick="clicar(this)">
-                    <img class="certificadoslaterais" src="imagens/certificado/certificado03.jpg" alt="" id="cert3" onclick="clicar(this)">
-                </picture>
-                <button onclick="setaDireita()" id="setadireita">
-                    <img src="imagens/icons/cetadireita.png" alt="">
-                </button>
+            <h2>Equipe</h2>
+            <section id="boxequipe">
+                <div>
+                    <img src="imagens/qualificacao/funcionaria01.png" alt="">
+                    <div class="nomefuncionarias">Sem Nome</div>
+                </div>
+                <div>
+                    <img src="imagens/qualificacao/funcionaria03.png" alt="">
+                    <div class="nomefuncionarias"><p>Cynara</p></div>
+                </div>
+                <div>
+                    <img src="imagens/qualificacao/funcionara02.png" alt="">
+                    <div class="nomefuncionarias"><p>Sem Nome</p></div>
+                </div>
+            </section>
+            <article>
+                <p>Nossa equipe é formada por cabeleireiras altamente qualificadas, apaixonadas pelo que fazem e com anos de experiência no mercado da beleza. Cada profissional se dedica a entregar resultados impecáveis, sempre acompanhando as últimas tendências, técnicas e tratamentos capilares.
+                Aqui, você será atendida por quem realmente entende de coloração, corte, cuidados com os fios e muito mais — tudo com atenção aos detalhes, escuta atenta e aquele toque especial que só quem ama o que faz consegue oferecer.</p>
             </article>
+            <button><p>Saiba Mais</p></button>
         </section>
         <section id="resultados">
             <div class="reta"><img src="imagens/icons/reta.png" alt=""></div> 
             <h2>Resultados</h2>
-            <div class="boxcarrosselresultados">
-            <div class="carrosselresultados" id="carrosselresultados">
-                <img src="imagens/galeria/cabelo1.jpg" class="itemresultados" />
-                <img src="imagens/galeria/cabelo2.jpeg" class="itemresultados" />
-                <img src="imagens/galeria/cabelo3.jpeg" class="itemresultados" />
-                <img src="imagens/galeria/cabelo4.jpg" class="itemresultados" />
-                <img src="imagens/galeria/cabelo5.jpg" class="itemresultados" />
-                <img src="imagens/galeria/cabelo6.jpeg" class="itemresultados" />
-                <img src="imagens/galeria/cabelo7.jpeg" class="itemresultados" />
-                <img src="imagens/galeria/cabelo8.jpg" class="itemresultados" />
-                <img src="imagens/galeria/cabelo10.jpg" class="itemresultados" />
-                <img src="imagens/galeria/cabelo11.jpg" class="itemresultados" />
-                <img src="imagens/galeria/cabelo12.jpg" class="itemresultados" />
-                <img src="imagens/galeria/cabelo13.jpg" class="itemresultados" />
-                <img src="imagens/galeria/cabelo14.jpg" class="itemresultados" />
-                
-            </div>
-            </div>
-        <section id="contato">
-            <div class="reta">
-                <img src="imagens/icons/reta.png" alt="">
-            </div>
-            <h2>Entre em Contato</h2>
-            <picture>
-                <div id="redes">
-                    <img src="imagens/icons/whatsapicon.png" alt="">
-                    <img src="imagens/icons/facebookicon.png" alt="">
-                    <img src="imagens/icons/istagramicon.png" alt="">
-                </div>
-                <p id="predes">Fale com a gente e agende seu momento de beleza!</p>
-            </picture>
+            <section>
+                <aside>
+                    <img id="imagem01" src="imagens/galeria/cabelo1.jpg" alt="">
+                    <img id="imagem02" src="imagens/galeria/cabelo2.jpeg" alt="">
+                    <img id="imagem03" src="imagens/galeria/cabelo3.jpeg" alt="">
+                    <img id="imagem04" src="imagens/galeria/cabelo4.jpg" alt="">
+                    <img id="imagem05" src="imagens/galeria/cabelo5.jpg" alt="">
+                </aside>
+            </section>
         </section>
     </main>
         <footer>
@@ -163,10 +155,12 @@
             </section>
         </div>
         <div id="final">
-            <p>Site criado por: Lina agência de Desing</p>
-            <p>© 2025 Salão Cynara Urbano — Todos os direitos reservados.</p>
+            
+                <p>Site criado por: Lina - Agencia de designer</p>
+                <p>© 2025 Salão Cynara Urbano — Todos os direitos reservados.</p>
         </div>
     <script src="scripts/script.js"></script>
     <script src="scripts/animacoes.js"></script>
+    <script src="scripts/animecoesGaleria.js"></script>
 </body>
 </html>

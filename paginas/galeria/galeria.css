@@ -32,23 +32,35 @@
     box-sizing: border-box;
 }
 body{
-    max-width: 1370px;
+    min-width: 1300px;
     margin: auto;
     display: block;
     background-color: var(--cor11);
 }
-.reta > h2{
+.reta{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.reta > img{
+    width: 246px;
+    height: 16px;
+    margin: 10px auto;
+}
+h2{
+    text-align: center;
     font-family: var(--versailles);
+    font-weight: normal;
+    color: #4b452b;
+    letter-spacing: 5px;
     font-size: 30px;
-    color: var(--cor06);
-    margin-left: 60px;
-    margin-bottom: 20px;
 }
 
 
 /*                                              Cabeçalho
  */
 header{
+    position: relative;
     width: 100%;
     height: 100vh;
     background-color: #d3c17a;
@@ -56,6 +68,7 @@ header{
     background-size: 650px;
     background-repeat: no-repeat;
     background-position: right 80px bottom -10px;
+    margin-bottom: 50px;
 }
 #erro{
     display: none;
@@ -155,19 +168,19 @@ li > a:hover{
 */
 
 
-#sobre  > h1, h2{
+#sobre  > h1{
     font-family: var(--versailles);
     font-weight: normal;
     color: #4b452b;
     margin-left: 60px;
     letter-spacing: 5px;
     font-size: 30px;
+    text-align: left;
 }
-.reta > img{
-    margin-top: 40px;
+#sobre > .reta > img{
     width: 246px;
     height: 16px;
-    margin-left: 47px;
+    margin-left: 50px;
 }
 #boxsalao{
     color: #4b452b;
@@ -218,39 +231,41 @@ li > a:hover{
 }
 
 #servicos > .reta > img{
-    width: 160px;
-    margin-left: 50px;
+    width: 200px;
 }
 
 #servicos > h2{
     font-family: var(--versailles);
     font-size: 30px;
     color: var(--cor06);
-    margin-left: 60px;
     margin-bottom: 20px;
 }
 .boxcarrossel {
-  position: relative;
-  width: 73%; 
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxcarrossel > button{
+    display: none;
 }
 .carrossel {
     display: flex;
-    overflow-x: auto; 
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    gap: 20px;
+    justify-content: space-evenly;
+    width: 100%;
 }
 .item {
-    background-color: black;
     width: 200px;
     height: 300px;
     border-radius: 10px;
     flex-shrink: 0;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.boxitens:hover .item{
+    filter: blur(5px);
 }
 .seta {
   background-color: transparent;
@@ -260,105 +275,136 @@ li > a:hover{
   z-index: 1;
   padding: 10px;
 }
+.boxitens{
+    position: relative;
+    background-color: black;
+    height: 300px;
+    border-radius: 10px;
+}
+.boxitens > p{
+    position: absolute;
+    top: 92px;
+    right: -85px;
+    text-align: left;
+    font-size: 20px;
+    width: 200px;
+    transform: rotate(90deg);
+    font-family: var(--quicksand);
+    color: var(--cor02);
+}
 
 
-/*                                           Parte dos certificados          
+/*                                           Parte da qualificação      
 */
 
 
 
-#certificados{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+#equipe{
     margin-top: 100px;
-}
-#certificados > .reta > img{
-    width: 200px;
-    margin-left: 50px;
-}
-#certificados > article{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    height: 800px;
 }
-#boxcertificados{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
+#equipe > .reta > img{
+    width: 70px;
 }
-.certificadoslaterais{
-    filter: blur(5px);
-    width: 250px;
+#boxequipe{
+    width: 70%;
     height: 200px;
-}
-#boxcertificados > div{
-    opacity: 0;
-    transition: 0.5s;
-}
-#boxcertificados:hover div{
-    opacity: 1;
-}
-#imgcertificados{ 
+    margin: 80px 0px 0px 0px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    gap: 20px;
 }
-#imgcertificados > img > .imagemcertificado{
-   display: flex;
-    
+#boxequipe > div{
+    position: relative;
+    background-color: var(--cor04);
+    border-radius: 50%;
 }
-#imgcertificados{
-    display:flex;
+#boxequipe > div > img{
+    width: 200px;
+    height: 90%;
 }
-#certificadomeio{
-    display: inline-block;
+.nomefuncionarias{
+    position: absolute;
+    bottom: -17px;
+    width: 200px;
+    height: 37px;
+    background-color: var(--cor11);
+    text-align: center;
+    font-family: var(--ruda);
+    color: var(--cor05);
+}
+.separar{
+    width: 10px;
+    height: 100%;
+    background-color: var(--cor06);
+}
+#equipe > article{
+    width: 70%;
+    margin: 80px auto 40px auto;
+    text-align: justify;
+    font-size: 18px;
+    font-family: var(--versailles);
+}
+#equipe > button{
+    border: none;
     border-radius: 10px;
-    width: 400px;
-    margin: 95px 120px;
-}
-#boxcertificados > div > img{
-    width: 20px;
-    height: auto;
-    cursor: pointer;
-    transition: 0.5s;
-    margin: 10px;
-}
-#boxcertificados > div:hover > img{
-    width: 30px;
-    margin: 5px;
+    width: 170px;
+    height: 30px;
+    color: var(--cor01);
+    background-color: var(--cor06);
+    font-family: var(--ruda);
+    font-size: 15px;
+
 }
 
 /*                          Parte dos resultados
 */
 
 
+
+#resultados{
+    height: 700px;
+}
 #resultados > .reta > img{
-    width: 150px;
+    width: 140px;
 }
-
-.fotosgaleria > div > img{
-    width: 200px;       
-    height: 400px;    
-    object-fit: cover; 
-    border-radius: 10px;
-          
-}
-
-.fotosgaleria{
+#resultados > section{
+    background-color: lightblue;
     display: flex;
-    gap: 80px;
-    align-items: center;
     justify-content: center;
-    margin: 50px;
-
+    width: 100%;
+    height: 100%;
 }
+aside{  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+}
+aside > img{
+    width: 15%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*                               Parte do contato
@@ -380,15 +426,15 @@ li > a:hover{
     width: 80%;
 }
 #redes > img{
-    width: 50px;
-    height: 50px;
-    margin: 20px;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
     transition: 0.5s;
 }
 #redes > img:hover{
-    width: 60px;
-    height: 60px;
-    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--cor01);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.185);
 }
 #predes{
     text-align: center;
@@ -407,7 +453,7 @@ li > a:hover{
 #boxfooter > img{
     width: 300px;
     height: auto;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 #li01{
@@ -430,6 +476,9 @@ li > a:hover{
     align-items: center;
     padding: 0px 30px 10px 30px;
 }
+#final > p{
+    font-family: var(ruda);
+}
 #divulgfinal{
     display: flex;
     justify-content: space-between;
@@ -443,6 +492,7 @@ li > a:hover{
     align-items: center;
 }
 #divulgfinal > section > p{
+    font-family: var(--ruda);
     font-size: 16px;
     color: var(--cor05);
 }

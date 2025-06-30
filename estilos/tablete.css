@@ -4,38 +4,66 @@
 body{
     min-width: 100vw;
 }
+h2{
+    font-size: 20px;
+}
 header {
-    height: 550px;
-    background-position: right -70px bottom 0px;
-    background-size: 540px;
+    height: 450px;
+    background-position: right -10px bottom 0px;
+    background-size: 450px;
     margin-bottom: 50px;
 }
 menu{
     left: 0px;
 }
+#logo02 {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 200px;
+}
 #box {
-    font-size: 140%;
-    translate: 10% 100%;
+    font-size: 120%;
+    translate: 15% 100%;
 }
 #box > p {
-    font-size: 12px;
+    font-size: 10px;
+}
+#button{
+    width: 150px;
+    height: 30px;
+}
+#button > p{
+    font-size: 9px;
+}
+#button > img{
+    width: 6px;
+}
+#sobre > h1{
+    font-size: 20px;
+}
+#sobre > .reta > img {
+    width: 210px;
+    height: 10px;
 }
 li > a {
-    font-size: 20px;
+    font-size: 13px;
     padding: 10px 15px;
 }
 #boxsalao{
     flex-direction: column;
 }
 #salao {
-    width: 78%;
-    margin: 50px 0px;
+    width: 75%;
+    margin: 60px 0px;
 }
 #salao > p {
-    font-size: 18px;
+    font-size: 14px;
+    letter-spacing: 3px;
 }
 #maps {
-    width: 90%;
+    width: 80%;
+    height: 300px;
     border-radius: 10px;
     margin-right: 0px;
     border: 5px solid var(--cor04);
@@ -45,52 +73,39 @@ li > a {
     width: 100%;
     height: 100%;
 }
+#servicos > h2{
+    font-size: 20px;
+}
+#servicos > .reta > img {
+    width: 150px;
+    height: 10px;
+}
 .boxcarrossel {
-    width: 90%;
+    width: 100%;
 }
 .seta{
     display: none;
 }
 .carrossel{
-    margin: 60px;
+    width: 97%;
+    display: flex;
+    overflow: auto;
+    gap: 3vw;
+    scrollbar-width: none;
 }
-#certificados{
-    margin-top: 0px;
-}
-.certificadoslaterais{
-    display: none;
-}
-#boxcertificados > button{
-    position: absolute;
-    margin: 50px;
-    display: block;
-    width: 40px;
-    height: 40px;
-}
-#setaesquerda{
-    left: 40px;
-    background-color: transparent;
-    border: none;
-}
-#setadireita{
-    right: 40px;
-    background-color: transparent;
-    border: none;
-}
-#imgcertificados {
-    position: static;
-}
+
 #contato {
     height: 300px;
     margin-top: 100px;
 }
-.carrosselresultados {
-    gap: 30px;
+aside > img{
+    width: 200px;
 }
-.boxcarrosselresultados {
-    width: 90%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+#imagem04{
+    display: none;
+}
+#imagem05{
+    display: none;
 }
 #redes {
     margin: 100px auto 100px auto;
@@ -102,6 +117,25 @@ li > a {
     transition: 0.5s;
 }
 #final > p {
-    font-size: 10px;
+    font-size: 17px;
 }
+}
+#li02{
+    font-size: 16px;
+    margin-left: 0px;
+}
+#li01{
+    font-size: 16px;
+    margin-left: 0px;
+}
+#boxfooter {
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+#divulgfinal > section > p {
+    font-size: 18px;
+}
+.iconfinal > img{
+    width: 25px;
 }
