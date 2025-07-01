@@ -35,7 +35,7 @@ body{
     min-width: 1300px;
     margin: auto;
     display: block;
-    background-color: var(--cor11);
+    background-color: #fff8de;
 }
 .reta{
     width: 100%;
@@ -65,7 +65,7 @@ header{
     height: 100vh;
     background-color: #d3c17a;
     background-image: url(../imagens/mulherloira.png);
-    background-size: 650px;
+    background-size: 700px;
     background-repeat: no-repeat;
     background-position: right 80px bottom -10px;
     margin-bottom: 50px;
@@ -100,12 +100,13 @@ li > a{
     font-family: var(--ruda);
     text-decoration: none;
     font-size: 13px;
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin: 0px 5px;
 }
 li > a:hover{
-    background-color: var(--cor06);
-    color: var(--cor11);
+    background-color: var(--cor04);
+    color: var(--cor06);
     transition: 0.5s;
     
 }
@@ -328,12 +329,14 @@ li > a:hover{
     height: 90%;
 }
 .nomefuncionarias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: -17px;
     width: 200px;
     height: 37px;
-    background-color: var(--cor11);
-    text-align: center;
+    background-color: #fff8de;
     font-family: var(--ruda);
     color: var(--cor05);
 }
@@ -476,6 +479,7 @@ footer{
     justify-content: space-between;
     padding: 0px 30px;
     align-items: center;
+    margin-bottom: 5px;
     
 }
 #divulgfinal > section{
@@ -484,7 +488,7 @@ footer{
 }
 #divulgfinal > section > p{
     font-family: var(--ruda);
-    font-size: 12px;
+    font-size: 15px;
     color: var(--cor05);
 }
 .iconfinal > p{
