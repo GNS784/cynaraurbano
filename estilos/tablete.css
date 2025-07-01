@@ -80,6 +80,9 @@ li > a {
     width: 150px;
     height: 10px;
 }
+#boxequipe{
+    width: auto;
+}
 .boxcarrossel {
     width: 100%;
 }
