@@ -82,6 +82,9 @@ header{
     right: 20px;
     width: 250px;
 }
+#iconSair{
+    opacity: 0;
+}
 menu{
     position: absolute;
     opacity: 1;
@@ -91,9 +94,6 @@ menu{
 }
 menu > ul{
     display: flex;
-}
-#iconSair{
-    opacity: 0;
 }
 li > a{
     color: var(--cor05);
@@ -108,8 +108,8 @@ li > a:hover{
     background-color: var(--cor04);
     color: var(--cor06);
     transition: 0.5s;
-    
 }
+    
 #box {
     text-decoration: justify;
     font-family: var(--versailles);

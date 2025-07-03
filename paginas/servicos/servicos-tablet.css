@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@media (max-width: 900px){
+    body{
+        min-width: 800px;
+    }
+    menu{
+        top: 100px;
+        width: 100%;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    li > a{
+        font-size: 14px;
+    }
+    #corte{
+        width: 75px;
+    }
+    #bollbig{
+        width: 250px;
+        height: 250px;
+        top: 30%;
+    }
+    #bollsmall{
+        width: 150px;
+        height: 150px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
