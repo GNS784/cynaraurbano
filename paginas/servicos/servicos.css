@@ -9,17 +9,17 @@
 /* Configurações Gerais*/
 :root{
     --cor00: white;
---cor01: #dbc97f;
---cor02: #d3c17a;
---cor03: #b1a267;
---cor04: #8f8353;
---cor05: #6d643f;
---cor06: #4b452b;
---cor11: #dbd6c2;
---ruda: 'Ruda', sans-serif;
---versailles: 'versailles', sans-serif;
---quicksand: 'quicksand', sans-serif;
---irianserif: "Inria Serif", serif;
+    --cor01: #dbc97f;
+    --cor02: #d3c17a;
+    --cor03: #b1a267;
+    --cor04: #8f8353;
+    --cor05: #6d643f;
+    --cor06: #4b452b;
+    --cor11: #fff8de;
+    --ruda: 'Ruda', sans-serif;
+    --versailles: 'versailles', sans-serif;
+    --quicksand: 'quicksand', sans-serif;
+    --irianserif: "Inria Serif", serif;
     
 }
 *{
@@ -28,22 +28,30 @@
     box-sizing: border-box;
 }
 body{
+    max-width:1370px;
     min-width: 1100px;
     display: block;
     margin: auto;
 }
-
 /*                                                 Configurações do cabeçalho
 */
-
 header{
     position: relative;
-    height:100vh;
+    height: 700px;
     width: 100%;
+    background-color: var(--cor01);
+    /*
     background-image: url(imagens/Fundo-Header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
+    */
+}
+#logo02 {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 200px;
 }
 #titleandbutton{
     display: flex;
@@ -58,11 +66,12 @@ header{
     width: 460px;
     height: auto;
 }
-h1{
-    width: 410px;
+h1 {
+    width: 470px;
     text-align: center;
     font-family: var(--versailles);
-    font-weight: normal;
+    font-weight: bold;
+    font-size: 35px;
     color: var(--cor05);
     letter-spacing: 1px;
 }
@@ -71,7 +80,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--cor05);
+    background-color: var(--cor06);
     border: none;
     padding: 10px;
     border-radius: 10px;
@@ -99,10 +108,11 @@ menu > ul{
     list-style: none;
 }
 li > a{
-    color: var(--cor05);
+    letter-spacing: 4px;
+    color: var(--cor06);
     font-family: var(--ruda);
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
     padding: 5px 15px;
     border-radius: 10px;
     margin: 0px 5px;
@@ -129,8 +139,7 @@ li > a:hover{
     width: 85%;
     height: 85%;
     border-radius: 50%;
-    background-image: url(imagens/Fundo-Header.jpg);
-    background-size: 1306px;
+    background-color: var(--cor01);
 }
 #corte{
     overflow: hidden;
@@ -152,9 +161,125 @@ li > a:hover{
     width: 85%;
     height: 85%;
     border-radius: 50%;
-    background-image: url(imagens/Fundo-Header.jpg);
-    background-size: 1206px;
+    background-color: var(--cor01);
 }
+#iconSair{
+    display: none;
+}
+#iconMenu{
+    display: none;
+}
+
+/*                                       Configurações do Corpo do site
+*/
 main{
-    height: 100vh;
+    background-color: var(--cor11);
+    padding-bottom: 50px;
+}
+.servicos {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    gap: 50px;
+    align-items: center;
+    padding: 100px 0px;
+}
+.boxcortes01{
+    width: 40%;
+    height: auto;
+}
+.boxcortes01 > h2{
+    text-align: center;
+    font-family: var(--ruda);
+    font-weight: normal;
+    font-size: 30px;
+    color: var(--cor06);
+}
+.boxcortes01 > img{
+    position: relative;
+    width: 100%;
+    height: 9px;
+}
+.boxcortes01 > article{
+    width: 90%;
+    height: auto;
+    margin: 40px auto 0px auto;
+    font-size: 16px;
+    text-align: justify;
+    font-family: var(--quicksand);
+}
+.boxcortes02{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    
+}
+.boxcortes02 > img{
+    width: 70%;
+    height: auto;
+    z-index: 1;
+}
+.circle01{
+    top: -60px;
+    left: -30px;
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: var(--cor11);
+    z-index: 2;
+}
+.circle02{
+    bottom: -60px;
+    right: -30px;
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: var(--cor11);
+    z-index: 2;
+}
+.square01{
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    width: 30%;
+    height: 40%;
+    background-color: var(--cor04);
+    border-radius: 20px;
+}
+.square02{
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+    width: 30%;
+    height: 40%;
+    background-color: var(--cor04);
+    border-radius: 20px;
+}
+#servicosreverse{
+    flex-direction: row-reverse;
+}
+#circle01reverse{
+    top: -60px;
+    right: -30px;
+    left: auto;
+}
+#circle02reverse{
+    bottom: -60px;
+    left: -30px;
+    right: auto;
+}
+#square01reverse{
+    top: -40px;
+    left: 20px;
+    right: auto;
+}
+#square02reverse{
+    bottom: -40px;
+    right: 20px;
+    left: auto;
 }

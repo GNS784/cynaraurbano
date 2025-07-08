@@ -20,7 +20,7 @@
 --cor06: #4b452b;
 --cor11: #dbd6c2;
 --ruda: 'Ruda', sans-serif;
---versailles: 'versailles', sans-serif;
+--versailles: 'versailles';
 --quicksand: 'quicksand', sans-serif;
 --irianserif: "Inria Serif", serif;
     
@@ -76,11 +76,11 @@ header{
 #iconMenu{
     opacity: 0;
 }
-#logo02{
+#logo02 {
     position: absolute;
-    top: 40px;
-    right: 20px;
-    width: 250px;
+    top: 30px;
+    right: 50px;
+    width: 200px;
 }
 #iconSair{
     opacity: 0;
@@ -99,7 +99,7 @@ li > a{
     color: var(--cor05);
     font-family: var(--ruda);
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
     padding: 5px 15px;
     border-radius: 10px;
     margin: 0px 5px;
@@ -115,7 +115,7 @@ li > a:hover{
     font-family: var(--versailles);
     font-weight: normal;
     font-size: 190%;
-    color: #4b452b;
+    color: var(--cor05);
     position:absolute;
     translate: 15% 70%;
     width: 60%;

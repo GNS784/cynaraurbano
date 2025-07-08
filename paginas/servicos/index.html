@@ -11,15 +11,22 @@
 </head>
 <body>
     <header>
+        <img id="logo02" src="imagens/icons/logo01.png" alt="">
+        <div id="iconMenu" onclick="clicarMenu()">
+            <img src="../../imagens/icons/menu.png" alt="">
+        </div>
         <div id="titleandbutton">
-            <h1>FIQUE POR DENTRO DOS NOSSOS SERVIÇOS</h1>
+            <h1>Fique por dentro dos nossos serviços</h1>
             <button>
                 <img src="imagens/bola.png" alt="">
                 <p>Agende seu hórario</p>
                 <img src="imagens/bola.png" alt="">
             </button>
         </div>
-        <menu>
+        <menu id="menu">
+            <div id="iconSair" onclick="clicarSair()">
+                <img src="../../imagens/icons/sairicon.png" alt="">
+            </div>
             <ul>
                 <li><a href="../../index.html">INICIO</a></li>
                 <li><a href="">SOBRE</a></li>
@@ -35,7 +42,116 @@
         </div>
     </header>
     <main>
+        <!--                                    CORTES DE CABELO                                             -->
+        <section class="servicos">
+            <div class="boxcortes01">
+                <h2>Cortes de cabelo</h2>
+                <img src="../../imagens/icons/reta.png" alt="">
+                <article>
+                    <p>
+                        No nosso estúdio, cada corte vai além da tesoura: é um momento de cuidado, escuta e transformação. Sabemos que o cabelo é uma extensão da sua identidade, e por isso tratamos cada cliente com atenção única, respeitando seu estilo, personalidade e desejos.
+                        Nossa equipe é formada por profissionais altamente qualificados, apaixonados pelo que fazem, e que acompanham as tendências mais atuais sem deixar de valorizar sua essência. Aqui, você é recebido com carinho, orientado com transparência e sai com um visual que reflete o melhor de você.
+                        Mais do que um corte — é uma experiência pensada para que você se sinta confiante, confortável e bem consigo mesmo.
+                    </p>
+                </article>
+            </div>
+            <div class="boxcortes02">
+                <img src="imagens/servicos_cortes.png" alt="">
+                <div class="circle01"></div>
+                <div class="circle02"></div>
+                <div class="square01"></div>
+                <div class="square02"></div>
+            </div>
+        </section>
+        <!--                                    COLORAÇAO                                             -->
+        <section class="servicos" id="servicosreverse">
+            <div class="boxcortes01">
+            <h2>Coloração</h2>
+            <img src="../../imagens/icons/reta.png" alt="">
+            <article>
+                <p>
+                    Colorir os cabelos é mais do que mudar o visual — é expressar quem você é. Por isso, no nosso estúdio, cada processo de coloração é feito com responsabilidade, técnica e muito respeito à saúde dos seus fios.
+                    Trabalhamos com produtos de alta qualidade e tecnologia, que garantem resultados vibrantes e duradouros, sem abrir mão do cuidado com a estrutura do cabelo. Nossos profissionais são especialistas em técnicas modernas de coloração, mechas, luzes, balayage e correção de cor, sempre alinhando seu desejo com o que há de mais seguro e atual no mercado.
+                    Aqui, você encontra um espaço seguro para se reinventar, se redescobrir e se sentir ainda mais confiante — com a certeza de estar nas mãos de quem entende e respeita sua beleza única.
 
+                </p>
+            </article>
+            </div>
+            <div class="boxcortes02">
+                <img src="imagens/servico-coloração.png" alt="">
+                <div class="circle01" id="circle01reverse"></div>
+                <div class="circle02" id="circle02reverse"></div>
+                <div class="square01" id="square01reverse"></div>
+                <div class="square02" id="square02reverse"></div>
+            </div>
+        </section>
+        <!--                                    MASSAGEM                                             -->
+        <section class="servicos">
+            <div class="boxcortes01">
+                <h2>massagem</h2>
+                <img src="../../imagens/icons/reta.png" alt="">
+                <article>
+                    <p>
+                        Em nosso estúdio, a massagem é um convite ao equilíbrio e ao cuidado com você. Cada sessão é pensada para proporcionar não só alívio físico, mas também bem-estar emocional, em um ambiente acolhedor, silencioso e preparado para o seu relaxamento.
+                        Nossas profissionais são altamente qualificadas e utilizam técnicas personalizadas para atender às suas necessidades — seja para aliviar dores, reduzir o estresse, melhorar a circulação ou simplesmente oferecer um momento de pausa.
+                        Acreditamos que o toque certo, no momento certo, pode transformar o seu dia. Aqui, seu corpo é respeitado, sua mente desacelera e você se reconecta com sua própria energia.
+                    </p>
+                </article>
+            </div>
+            <div class="boxcortes02">
+                <img src="imagens/servico-massagem.png" alt="">
+                <div class="circle01"></div>
+                <div class="circle02"></div>
+                <div class="square01"></div>
+                <div class="square02"></div>
+            </div>
+        </section>
+        <!--                                    GLOSS EXPRESS                                            -->
+        <section class="servicos" id="servicosreverse">
+            <div class="boxcortes01">
+            <h2>Gloss Express</h2>
+            <img src="../../imagens/icons/reta.png" alt="">
+            <article>
+                <p>
+                    No nosso estúdio de beleza, o atendimento é pensado para valorizar sua beleza de forma prática e eficiente. No serviço de Gloss Express, unimos agilidade, qualidade e dedicação para entregar um resultado luminoso, sem abrir mão do cuidado com cada cliente.
+                    Nossa equipe está sempre pronta para oferecer uma experiência leve, acolhedora e feita com carinho, do jeitinho que você merece.
+                    Cada passo do processo é pensado para que você se sinta confortável, confiante e satisfeita com o resultado.
+                    Aqui, o brilho vai além dos fios — é sobre se sentir bem, mesmo nos dias mais corridos.
+                    Venha descobrir como é possível transformar seu visual em minutos, com toda a atenção que você merece.
+                </p>
+            </article>
+            </div>
+            <div class="boxcortes02">
+                <img src="imagens/servico-glossexpress.png" alt="">
+                <div class="circle01" id="circle01reverse"></div>
+                <div class="circle02" id="circle02reverse"></div>
+                <div class="square01" id="square01reverse"></div>
+                <div class="square02" id="square02reverse"></div>
+            </div>
+        </section>
+        <!--                                    MANICURE E PEDICURE                                             -->
+        <section class="servicos">
+            <div class="boxcortes01">
+                <h2>Manicure e Pedicure</h2>
+                <img src="../../imagens/icons/reta.png" alt="">
+                <article>
+                    <p>
+                        No nosso estúdio de beleza, a experiência com manicure e pedicure vai além da estética — é um momento de cuidado, relaxamento e bem-estar. Cada atendimento é feito com atenção, higiene impecável e os melhores produtos, respeitando seu estilo e sua rotina.
+                        Nossa equipe é especializada em entregar não só unhas lindas, mas também conforto e satisfação em cada toque.
+                        Do clássico ao moderno, tudo é feito com dedicação para realçar sua beleza com leveza e elegância.
+                        Porque aqui, você não cuida só das unhas — cuida de você.
+                    </p>
+                </article>
+            </div>
+            <div class="boxcortes02">
+                <img src="imagens/servico-manicure-e-pedicure.png" alt="">
+                <div class="circle01"></div>
+                <div class="circle02"></div>
+                <div class="square01"></div>
+                <div class="square02"></div>
+            </div>
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
