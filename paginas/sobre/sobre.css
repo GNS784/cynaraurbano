@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+/* Configurações Gerais*/
+:root{
+    --cor00: white;
+--cor01: #dbc97f;
+--cor02: #d3c17a;
+--cor03: #b1a267;
+--cor04: #8f8353;
+--cor05: #6d643f;
+--cor06: #4b452b;
+--cor11: #dbd6c2;
+--ruda: 'Ruda', sans-serif;
+--versailles: 'versailles';
+--quicksand: 'quicksand', sans-serif;
+--irianserif: "Inria Serif", serif;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 1300px;
+    margin: auto;
+    display: block;
+    background-color: #fff8de;
+}
+.reta{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.reta > img{
+    width: 246px;
+    height: 16px;
+    margin: 10px auto;
+}
+h2{
+    text-align: center;
+    font-family: var(--versailles);
+    font-weight: normal;
+    color: #4b452b;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+
+/*                                              Cabeçalho
+ */
+
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+menu{
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 500px;
+    height: 50px;
+}
+#iconem{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 200px;
+    height: auto;
+}
+header > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    width: 100%;
+    height: 50vh;
+   
+}
+#iconml{
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    border: var(--cor06) 3px solid;
+}
+h1{
+    width: 500px;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                               Parte Sobre
+*/
+#sobre  > h1{
+    font-family: var(--versailles);
+    font-weight: normal;
+    color: #4b452b;
+    margin-left: 60px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: left;
+}
+#sobre > .reta > img{
+    width: 246px;
+    height: 16px;
+    margin-left: 50px;
+}
+#boxsalao{
+    color: #4b452b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#salao > p{
+    font-family: var(--quicksand);
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 4px;
+    line-height: 1.5;
+
+}
+#salao{
+    width: 40%;
+    margin-top: 50px;
+}
+#maps{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 40%;
+    height: 400px;
+    background-color: var(--cor04);
+    border-radius: 10px 0px 0px 10px;
+    margin-right: -87px;
+}
+#maps > iframe{
+    width: 99%;
+    border-radius: 10px 0px 0px 10px;
+    height: 390px;
+    left: 100%;
+}
+
+
+/*                                      Parte da Equipe*/
+
+#equipe > h1 {
+    font-family: var(--versailles);
+    font-weight: normal;
+    color: #4b452b;
+    margin-left: 60px;
+    font-size: 30px;
+    text-align: center;
+}
+

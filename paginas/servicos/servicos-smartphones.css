@@ -7,14 +7,15 @@
         height: 600px;
     }
     menu{
+        position: fixed;
         transition: 0.5s;
-        height: 100vh;
+        height: 110vh;
         background: var(--cor03);
         top: 0px;
         left: -100%;
         justify-content: center;
         align-items: center;
-        z-index: 1;
+        z-index: 3;
     }
     h1{
         width: 250px;
@@ -26,7 +27,7 @@
         font-size: 20px;
     }
     #titleandbutton {
-        gap: 15px;
+        gap: 15px3
     }
     #bollbig{
         left: -75px;
@@ -40,8 +41,8 @@
         text-align: center;
     }
     li > a{
-    font-size: 20px;
-    
+        letter-spacing: 4px;
+        font-size: 20px;
     }
     li > a:hover{
         background-color: transparent;
